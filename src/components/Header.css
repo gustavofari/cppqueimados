@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "openSauce";
+  src: url("../assets/fonts/OpenSauceTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "openSauceBold";
+  src: url("../assets/fonts/OpenSauceTwo-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "pakal";
+  src: url("../assets/fonts/Pakal-Regular.otf");
+}
+
+.Header {
+  height: 12dvh;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "openSauce";
+}
+
+.Navbar img {
+  object-fit: contain;
+  cursor: pointer;
+  width: 8dvw;
+  margin-left: 30px;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.Navbar li {
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.menu-navbar {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.menu-navbar {
+  color: #000;
+}
+
+.menu-navbar::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #a998e5ff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.menu-navbar:hover::before {
+  transform: scaleX(1);
+}

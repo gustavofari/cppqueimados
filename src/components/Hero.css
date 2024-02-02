@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "openSauce";
+  src: url("../assets/fonts/OpenSauceTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "openSauceBold";
+  src: url("../assets/fonts/OpenSauceTwo-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "pakal";
+  src: url("../assets/fonts/Pakal-Regular.otf");
+}
+
+.Hero {
+  background-color: #a998e5ff;
+  /* background-image: url("../assets/images/background-icons.png");
+  background-repeat: repeat; */
+  height: 88dvh;
+  display: flex;
+}
+
+.Hero-Image {
+  width: 60%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.Hero-Image img {
+  width: 60vw;
+  transition: transform 0.5s ease;
+  animation: scaleImage 1.5s ease infinite;
+}
+
+@keyframes scaleImage {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.002);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Hero-Text {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text-Main {
+  font-size: 2.5rem;
+}
+
+.Text-Main > h6 {
+  font-family: "openSauce";
+  font-size: 2rem;
+}
+
+.Animation-type {
+  display: flex;
+  justify-content: center;
+}
+
+.Animation-type p {
+  font-family: "openSauceBold";
+  width: 31vw;
+  font-size: 5.5rem;
+  height: 170px;
+  line-height: 80px;
+}
+
+.text-animation {
+  display: flex;
+}
+
+.text-title-typewriter::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: typing 0.6s infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.Animation-city {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  font-family: "pakal";
+}
+
+.Animation-city span {
+  font-size: 1.9rem;
+  margin-right: 10px;
+  font-family: "pakal";
+  color: #a998e5ff;
+  padding: 2px 8px 2px 8px;
+  border-radius: 7px;
+  background-color: #000;
+}
+
+.Animation-city img {
+  width: 50px;
+  margin-right: 10px;
+  animation: circle 1.5s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "openSauce";
+  src: url("../assets/fonts/OpenSauceTwo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "openSauceBold";
+  src: url("../assets/fonts/OpenSauceTwo-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "pakal";
+  src: url("../assets/fonts/Pakal-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a998e5ff;
+}
