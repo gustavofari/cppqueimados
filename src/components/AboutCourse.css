@@ -1,4 +1,20 @@
 .AboutCourse {
   background-color: #bc87f1;
   height: 100dvh;
+
+  background-image: url("../assets/images/galery/cppq-9.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.AboutCourse::before {
+  content: "";
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Ajuste a opacidade conforme desejado */
 }
